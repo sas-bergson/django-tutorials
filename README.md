@@ -3,7 +3,7 @@
 
 This repository is a tutorial on how to build an E-commerce web application using Django and Bootstrap5.
 
-![GitHub all releases](https://img.shields.io/github/downloads/sas-bergson/django-tutorials/total?style=plastic) ![GitHub](https://img.shields.io/github/license/sas-bergson/django-tutorials) ![GitHub Pipenv locked Python version](https://img.shields.io/github/pipenv/locked/python-version/sas-bergson/django-tutorials) ![GitHub commit activity](https://img.shields.io/github/commit-activity/m/sas-bergson/django-tutorials)
+![GitHub all releases](https://img.shields.io/github/downloads/sas-bergson/django-tutorials/total?style=plastic) ![GitHub](https://img.shields.io/github/license/sas-bergson/django-tutorials) ![GitHub commit activity](https://img.shields.io/github/commit-activity/m/sas-bergson/django-tutorials)
 
 ## Getting started
 
