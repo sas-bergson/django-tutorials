@@ -1,0 +1,34 @@
+{% extends 'base/index.html' %} 
+
+{% load static %}
+
+{% block head_title %}E-commerce Application built with Django and Bootstrap 5{% endblock %}
+
+{% block extra_head %} 
+    {% include 'base/extra_head.html' %} 
+{% endblock %} 
+
+{% block navbar %} 
+    {% include 'base/navbar.html' %} 
+{% endblock %} 
+
+{% block messages %} 
+    {% include 'base/messages.html' %} 
+{% endblock %}
+
+{% comment %} {% block carousel %} 
+    {% include 'base/carousel.html' %} 
+{% endblock carousel %} {% endcomment %}
+
+{% block main %} 
+    {% include 'order_summary/main.html' %} 
+{% endblock %} 
+
+{% block footer %} 
+    {% include 'base/footer.html' %} 
+{% endblock %} 
+
+{% block extra_body %} 
+    {% include 'base/extra_body.html' %} 
+{% endblock %}
+

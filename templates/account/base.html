@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+{% extends 'base/index.html' %} 
+
+{% load static %}
+
+{% block head_title %}{% endblock %}
+
+{% block extra_head %} 
+    {% include 'base/extra_head.html' %} 
+{% endblock %} 
+
+{% comment %} {% block navbar %} 
+    {% include 'base/navbar.html' %} 
+{% endblock navbar %} {% endcomment %}
+
+{% block messages %} 
+    {% include 'base/messages.html' %} 
+{% endblock %}
+
+{% comment %} {% block carousel %} 
+    {% include 'base/carousel.html' %} 
+{% endblock carousel %} {% endcomment %} 
+
+{% block footer %} 
+    {% include 'base/footer.html' %} 
+{% endblock %} 
+
+{% block extra_body %} 
+    {% include 'base/extra_body.html' %} 
+{% endblock %}

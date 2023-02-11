@@ -1,0 +1,44 @@
+{% load static %}
+
+<!--Main layout-->
+<main class="mt-1">
+    <div class="table-responsive text-nowrap">
+        <!--Responsive table-->
+        <table class="table caption-top">
+            <caption>
+                <h2>Order Summary</h2>
+              </caption>
+            <thead>
+              <tr>
+                <th scope="col">#</th>
+                <th scope="col">Title</th>
+                <th scope="col">Price</th>
+                <th scope="col">Quantity</th>
+                <th scope="col">total Item Price</th>
+              </tr>
+            </thead>
+            <tbody>
+                {% for order_item in object.items.all %}
+                    <tr>
+                        <th scope="row">1</th>
+                        <td>{{ order_item.item.title }}</td>
+                        <td>{{ order_item.item.price }}</td>
+                        <td>{{ order_item.quantity }}</td>
+                        <td>
+                          <p class="lead">
+                            {% if order_item.item.discount %}
+                              <span>{{ order_item.get_total_item_discount_price }}</span>
+                              <span class="me-1"><del>{{ order_item.get_total_item_price }}</del></span>
+                            {% else %}
+                              <span class="me-1">{{order_item.get_total_item_price}}<span>
+                            {% endif %}
+                          </p>
+                        </td>
+                    </tr>
+                {% endfor %}
+            </tbody>
+          </table>
+        <!--Responsive table-->
+    </div>
+</main>
+<!--Main layout-->
